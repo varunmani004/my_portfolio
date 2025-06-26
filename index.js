@@ -5,33 +5,9 @@
         once: true
       });
 
-      // Theme Toggle
-      const themeToggle = document.getElementById('themeToggle');
-      const body = document.body;
-      
-      themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-theme');
-        const icon = themeToggle.querySelector('i');
-        if (body.classList.contains('light-theme')) {
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
-        } else {
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-moon');
-        }
-      });
 
-      // Add light theme CSS
-      const style = document.createElement('style');
-      style.textContent = `
-        .light-theme {
-          --primary-blue: #f8f9fa;
-          --secondary-blue: #e9ecef;
-          --text-primary: #212529;
-          --text-secondary: #495057;
-        }
-      `;
-      document.head.appendChild(style);
+
+     
 
       // Project Filter
       const filterButtons = document.querySelectorAll('.project-filters button');
