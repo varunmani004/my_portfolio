@@ -89,6 +89,44 @@
         });
       });
 
+      // Replace with your actual PUBLIC KEY
+emailjs.init("43H5IxTwjusruij2o"); // Replace with your public key
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const statusElement = document.getElementById('form-status');
+  statusElement.textContent = 'Sending...';
+  statusElement.style.color = '#64ffda';
+
+  const now = new Date().toLocaleString();
+
+  // Template Params - matching both templates
+  const templateParams = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+    title: "Portfolio Contact Form Submission",
+    time: now
+  };
+
+  // Send to your inbox
+  emailjs.send("service_4th0hud", "template_4s06jk3", templateParams) // <-- your actual IDs
+    .then(function(response) {
+      statusElement.textContent = 'Message sent successfully!';
+      statusElement.style.color = '#64ffda';
+      document.getElementById('contact-form').reset();
+
+      // Auto-reply
+      emailjs.send("service_4th0hud", "template_7gm2a7d", templateParams);
+    })
+    .catch(function(error) {
+      statusElement.textContent = 'Failed to send message. Please try again.';
+      statusElement.style.color = '#ff6b6b';
+      console.error("EmailJS error:", error);
+    });
+});
+
       // Skill Box Animation
       gsap.utils.toArray(".skill-box").forEach((box, i) => {
         gsap.from(box, {

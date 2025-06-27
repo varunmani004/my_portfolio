@@ -20,6 +20,53 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/ico" href="images/favicon.ico">
 
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS with your User ID
+      (function() {
+        emailjs.init("YOUR_USER_ID_HERE"); // Replace with your actual EmailJS user ID
+      })();
+
+      // Form submission handler
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const statusElement = document.getElementById('form-status');
+        statusElement.textContent = 'Sending your message...';
+        statusElement.style.color = '#64ffda'; // Using your accent color
+        
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          message: document.getElementById('message').value
+        };
+
+        // Send email using EmailJS
+        emailjs.send("service_4th0hud", "template_4s06jk3", formData)
+          .then(function(response) {
+            statusElement.textContent = 'Message sent successfully! We\'ll get back to you soon.';
+            statusElement.style.color = '#64ffda';
+            
+            // Reset form
+            document.getElementById('contact-form').reset();
+            
+            // Auto-reply to user (optional - requires another template)
+            const autoReplyParams = {
+              to_email: formData.email,
+              to_name: formData.name,
+              from_name: "Your Name",
+              message: "Thank you for contacting me! I've received your message and will get back to you soon."
+            };
+            
+            return emailjs.send("service_4th0hud", "YOUR_AUTO_REPLY_TEMPLATE_ID", autoReplyParams);
+          })
+          .catch(function(error) {
+            statusElement.textContent = 'Failed to send message. Please try again or contact me directly at varunmani926@gmail.com';
+            statusElement.style.color = '#ff6b6b';
+            console.error('EmailJS Error:', error);
+          });
+      });
+    </script>
 
     
   </head>
@@ -450,18 +497,23 @@ I combine data-driven thinking with creative design to develop impactful solutio
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-dark">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-              <input type="text" name="name" placeholder="Name" required>
-              <input type="email" name="_replyto" placeholder="Email" required>
-              <textarea name="message" rows="5" placeholder="Message" required></textarea>
-              <button type="submit" class="btn btn-custom w-100">Send Message</button>
-            </form>
+   <!-- Updated Contact Section -->
+<section id="contact" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="contact-form" class="contact-form">
+            <input type="text" id="name" name="from_name" placeholder="Name" required>
+            <input type="email" id="email" name="user_email" placeholder="Email" required>
+            <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-custom w-100">Send Message</button>
+          </form>
+          <div id="form-status" class="mt-3 text-center"></div>
+        </div>
+      </div>
+    </div>
+  </section>
             
             <!-- Contact Links -->
             <div class="contact-links mt-4">
@@ -495,6 +547,7 @@ I combine data-driven thinking with creative design to develop impactful solutio
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="index.js"></script>
 
   </body>
