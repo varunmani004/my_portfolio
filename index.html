@@ -20,54 +20,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/ico" href="images/favicon.ico">
 
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      // Initialize EmailJS with your User ID
-      (function() {
-        emailjs.init("YOUR_USER_ID_HERE"); // Replace with your actual EmailJS user ID
-      })();
-
-      // Form submission handler
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const statusElement = document.getElementById('form-status');
-        statusElement.textContent = 'Sending your message...';
-        statusElement.style.color = '#64ffda'; // Using your accent color
-        
-        const formData = {
-          name: document.getElementById('name').value,
-          email: document.getElementById('email').value,
-          message: document.getElementById('message').value
-        };
-
-        // Send email using EmailJS
-        emailjs.send("service_4th0hud", "template_4s06jk3", formData)
-          .then(function(response) {
-            statusElement.textContent = 'Message sent successfully! We\'ll get back to you soon.';
-            statusElement.style.color = '#64ffda';
-            
-            // Reset form
-            document.getElementById('contact-form').reset();
-            
-            // Auto-reply to user (optional - requires another template)
-            const autoReplyParams = {
-              to_email: formData.email,
-              to_name: formData.name,
-              from_name: "Your Name",
-              message: "Thank you for contacting me! I've received your message and will get back to you soon."
-            };
-            
-            return emailjs.send("service_4th0hud", "YOUR_AUTO_REPLY_TEMPLATE_ID", autoReplyParams);
-          })
-          .catch(function(error) {
-            statusElement.textContent = 'Failed to send message. Please try again or contact me directly at varunmani926@gmail.com';
-            statusElement.style.color = '#ff6b6b';
-            console.error('EmailJS Error:', error);
-          });
-      });
-    </script>
-
+       
     
   </head>
   <body>
@@ -110,7 +63,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero-content">
-        <h1 class="mb-4">Varun V M</h1>
+        <h1 class="mb-4">Varun V </h1>
         <p class="h4 mb-4" style="color: var(--text-secondary)">
          Data Analyst | Web Developer | 3D Artist | AI/ML Enthusiast
         </p>
