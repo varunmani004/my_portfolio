@@ -42,7 +42,7 @@
           move: {
             enable: true,
             speed: 2,
-            direction: "none",
+            direction: "right",
             random: false,
             straight: false,
             out_mode: "out",
