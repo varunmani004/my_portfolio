@@ -31,6 +31,23 @@
         });
       });
 
+
+
+//projects
+     
+document.getElementById("viewMoreBtn").addEventListener("click", function() {
+  var moreProjects = document.getElementById("moreProjects");
+  if (moreProjects.style.display === "none") {
+    moreProjects.style.display = "flex";  // show hidden projects
+    this.textContent = "View Less";
+  } else {
+    moreProjects.style.display = "none";  // hide them again
+    this.textContent = "View More";
+  }
+});
+
+
+
       // Particles.js Configuration
       particlesJS("particles-js", {
         particles: {

@@ -69,3 +69,239 @@
         }
         emailjs.send("service_4th0hud","template_4s06jk3",param).then(alert("Email Has Been Sent!!"))
       }
+
+
+------------------------------------------------------
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Featured Work</h2>
+    
+    <!-- Project Filters -->
+    <div class="project-filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="data">Data Analytics</button>
+      <button data-filter="web">Web Development</button>
+      <button data-filter="design">Blender</button>
+      <button data-filter="ml">ML Projects</button> 
+
+    </div>
+    
+    <div class="row g-4">
+      
+    
+      
+
+      
+      <!-- Chocolate Sales Project -->
+      <div class="col-md-6 col-lg-4" data-category="data">
+        <div class="card">
+          <img src="images/Chocolate.png" class="card-img-top" alt="Sale of Chocolate" loading="lazy" style="height: 200px; object-fit: cover">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">Sale of Chocolate</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Comprehensive sales intelligence platform that boosted decision-making efficiency by 35% through interactive country comparisons and real-time performance tracking. Enabled management to identify $280K in untapped revenue opportunities by analyzing top-performing sales personnel and seasonal trends.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Tableau</span>
+              <span class="badge bg-dark">Excel</span>
+            </div>
+            <div class="mt-3">
+              <a href="https://public.tableau.com/views/Chocolate_SalesPerformance/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="btn btn-sm btn-custom me-2">View Project</a>
+              <a href="https://github.com/varunmani004/my-projects/tree/main/Data%20Analytics" class="btn btn-sm btn-custom-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <!-- Weather Insights Project -->
+      <div class="col-md-6 col-lg-4" data-category="data">
+        <div class="card">
+          <img src="images/Weather_insights.png" class="card-img-top" alt="Weather Insights" loading="lazy" style="height: 200px; object-fit: cover">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">Weather Insights Dashboard</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Data-driven environmental monitoring system that improved urban planning insights by 40% through dynamic AQI visualization and weather pattern correlation analysis. Empowered city officials with predictive capabilities for pollution management across 6 major metropolitan areas.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Tableau</span>
+              <span class="badge bg-dark">Excel</span>
+            </div>
+            <div class="mt-3">
+              <a href="https://public.tableau.com/views/Weather_InsightsDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="btn btn-sm btn-custom me-2">View Project</a>
+              <a href="https://github.com/varunmani004/My_projects" class="btn btn-sm btn-custom-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gold Price Prediction Project -->
+      <div class="col-md-6 col-lg-4" data-category="ml">
+        <div class="card">
+          <img src="images/Gp.png" class="card-img-top" alt="Gold Price Prediction App" loading="lazy" style="height: 200px; object-fit: cover">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">Gold Price Prediction</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Machine learning web app that predicts gold prices using historical financial data and multiple regression models (Random Forest, Lasso, XGBoost). Features real-time predictions through user uploads or manual input, deployed via Streamlit for interactive use.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Python</span>
+              <span class="badge bg-dark">Scikit-learn</span>
+              <span class="badge bg-dark">XGBoost</span>
+              <span class="badge bg-dark">Streamlit</span>
+            </div>
+            <div class="mt-3">
+              <a href="https://goldprice-prediction.streamlit.app/" class="btn btn-sm btn-custom me-2">Live Demo</a>
+              <a href="https://github.com/varunmani004/gold_prediction" class="btn btn-sm btn-custom-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Coding Chat Bot Project -->
+<div class="col-md-6 col-lg-4" data-category="ml">
+  <div class="card">
+    <img src="images/chatbot.png" class="card-img-top" alt="Coding Chat Bot" loading="lazy" style="height: 200px; object-fit: cover">
+    <div class="card-body">
+      <h5 class="card-title" style="color: var(--accent-blue)">Coding Chat Bot</h5>
+      <p class="card-text" style="color: var(--text-secondary)">
+        AI-powered coding assistant that helps debug, explain, and generate code snippets. Built with OpenAI's API and Streamlit, featuring context-aware responses for multiple programming languages. Supports interactive Q&A with code formatting and execution examples.
+      </p>
+      <div class="tech-tags">
+        <span class="badge bg-dark">Python</span>
+        <span class="badge bg-dark">Streamlit</span>
+      </div>
+      <div class="mt-3">
+        <a href="https://codingchat-bot.streamlit.app/" class="btn btn-sm btn-custom me-2">Live Demo</a>
+        <a href="https://github.com/varunmani004/coding_ChatBot" class="btn btn-sm btn-custom-secondary">Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <!-- E-commerce Website -->
+      <div class="col-md-6 col-lg-4" data-category="web">
+        <div class="card">
+          <img src="images/Ecom.png" class="card-img-top" alt="E-commerce Website" loading="lazy" style="height: 200px; object-fit: cover">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">E-commerce Platform</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Full-stack e-commerce solution with React frontend and Node.js backend, reducing page load time by 60% through optimized asset delivery.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">React</span>
+              <span class="badge bg-dark">Node.js</span>
+              <span class="badge bg-dark">MongoDB</span>
+            </div>
+            <div class="mt-3">
+              <a href="https://giftyfy.netlify.app" class="btn btn-sm btn-custom me-2">View Demo</a>
+              <a href="https://github.com/varunmani004/gifty-fyy" class="btn btn-sm btn-custom-secondary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D Car Animation -->
+      <div class="col-md-6 col-lg-4" data-category="design">
+        <div class="card">
+          <video class="card-img-top" controls style="height: 200px; object-fit: cover">
+            <source src="videos/Car.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">3D Car Animation</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Photorealistic 3D car simulation with advanced particle effects and dynamic lighting, created for automotive client marketing materials.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Blender</span>
+              <span class="badge bg-dark">3D Modeling</span>
+              <span class="badge bg-dark">Animation</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-category="web">
+  <div class="card">
+    <img src="images/fittrack.png" class="card-img-top" alt="Fit-Track Website" loading="lazy" style="height: 200px; object-fit: cover">
+    <div class="card-body">
+      <h5 class="card-title" style="color: var(--accent-blue)">Fit-Track</h5>
+      <p class="card-text" style="color: var(--text-secondary)">
+        Fitness tracking web app built with HTML, CSS, and JavaScript. Allows users to log workouts, track progress, and visualize activity trends.
+      </p>
+      <div class="tech-tags">
+        <span class="badge bg-dark">HTML</span>
+        <span class="badge bg-dark">CSS</span>
+        <span class="badge bg-dark">JavaScript</span>
+      </div>
+      <div class="mt-3">
+        <a href="https://varunmani004.github.io/fit-track/" class="btn btn-sm btn-custom me-2">View Demo</a>
+        <a href="https://github.com/varunmani004/fit-track" class="btn btn-sm btn-custom-secondary">Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- 3D LOFI Factory -->
+      <div class="col-md-6 col-lg-4" data-category="design">
+        <div class="card">
+          <video class="card-img-top" controls style="height: 200px; object-fit: cover">
+            <source src="videos/lofi factory.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">Lofi Factory</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Hypnotic 3D animation loop combining ASMR-inspired motion with minimalist aesthetics. Features perfectly synchronized geometric transformations and soothing color transitions, ideal for social media content and relaxation apps.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Blender</span>
+              <span class="badge bg-dark">3D Modeling</span>
+              <span class="badge bg-dark">Animation</span>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-category="data">
+        <div class="card">
+          <img src="images/Sales_Data.png" class="card-img-top" alt="Sales Dashboard" loading="lazy" style="height: 200px; object-fit: cover">
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">Sales Data Dashboard</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Comprehensive sales analysis platform that increased client revenue visibility by 40% through interactive visualizations and real-time KPI tracking.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Excel</span>
+              <span class="badge bg-dark">SQL</span>
+            </div>
+            <div class="mt-3">
+              <a href="https://github.com/varunmani004/My_projects" class="btn btn-sm btn-custom me-2">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- 3D Shoes -->
+      <div class="col-md-6 col-lg-4" data-category="design">
+        <div class="card">
+          <video class="card-img-top" controls style="height: 200px; object-fit: cover">
+            <source src="videos/Shoes.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title" style="color: var(--accent-blue)">Product Animation - Shoes</h5>
+            <p class="card-text" style="color: var(--text-secondary)">
+              Stylish 3D footwear visualization featuring realistic material textures and smooth rotation sequences, created for e-commerce product showcases. Highlights design details through cinematic lighting and close-up angles to enhance online shopping experiences.
+            </p>
+            <div class="tech-tags">
+              <span class="badge bg-dark">Blender</span>
+              <span class="badge bg-dark">3D Modeling</span>
+              <span class="badge bg-dark">Animation</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
