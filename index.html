@@ -63,7 +63,7 @@
       <div class="hero-content">
         <h1 class="mb-4">Varun V M</h1>
         <p class="h4 mb-4" style="color: var(--text-secondary)">
-         Data Analyst | Web Developer | 3D Artist | AI/ML Enthusiast
+         AI/ML Enthusiast | Data Analyst | Web Developer | 3D Artist 
         </p>
         <p class="h5 mb-4" style="color: var(--text-secondary)">"Transforming Ideas into Insightful Analytics, Web Experiences, and 3D Visuals"</p>
 
@@ -202,10 +202,11 @@ I combine data-driven thinking with creative design to develop impactful solutio
     <!-- Project Filters -->
     <div class="project-filters">
       <button class="active" data-filter="all">All</button>
-      <button data-filter="data">Data Analytics</button>
-      <button data-filter="web">Web Development</button>
-      <button data-filter="design">Blender</button>
-      <button data-filter="ml">ML Projects</button> 
+      <button data-filter="ml">AI & Machine Learning Projects</button>
+      <button data-filter="data">Data Analytics & Business Intelligence</button>
+      <button data-filter="web">Web Development Projects</button>
+      <button data-filter="design">3D Design & Animation</button>
+       
 
     </div>
     
@@ -213,7 +214,26 @@ I combine data-driven thinking with creative design to develop impactful solutio
       
     
       
-
+      <div class="col-md-6 col-lg-4" data-category="ml">
+  <div class="card">
+    <img src="images/sbai.png" class="card-img-top" alt="StudyBuddy AI Web App" loading="lazy" style="height: 200px; object-fit: cover">
+    <div class="card-body">
+      <h5 class="card-title" style="color: var(--accent-blue)">StudyBuddy – AI Study Assistant</h5>
+      <p class="card-text" style="color: var(--text-secondary)">
+        Intelligent study companion with AI-powered chat, subject-wise material upload, inline PDF preview, and personalized learning assistance. Built with Flask, vector embeddings, and OpenRouter LLM integration.
+      </p>
+      <div class="tech-tags">
+        <span class="badge bg-dark">Flask</span>
+        <span class="badge bg-dark">OpenRouter API</span>
+        <span class="badge bg-dark">python</span>
+      </div>
+      <div class="mt-3">
+        <a href="https://studybuddy-ai-x30d.onrender.com" class="btn btn-sm btn-custom me-2">View Demo</a>
+        <a href="https://github.com/varunmani004/StudyBuddy_AI" class="btn btn-sm btn-custom-secondary">Code</a>
+      </div>
+    </div>
+  </div>
+</div>
       
       <!-- Chocolate Sales Project -->
       <div class="col-md-6 col-lg-4" data-category="data">
@@ -235,7 +255,29 @@ I combine data-driven thinking with creative design to develop impactful solutio
           </div>
         </div>
       </div>
-      
+      <!-- Sales Data Pipeline Project -->
+<div class="col-md-6 col-lg-4" data-category="data">
+  <div class="card">
+    <img src="images/sdp.png" class="card-img-top" alt="Sales Data Analytics Dashboard" loading="lazy" style="height: 200px; object-fit: cover">
+    <div class="card-body">
+      <h5 class="card-title" style="color: var(--accent-blue)">Sales Data Pipeline</h5>
+      <p class="card-text" style="color: var(--text-secondary)">
+        End-to-end sales analytics pipeline that ingests sales data into MySQL and visualizes insights using Streamlit. Features interactive KPI tracking, monthly sales trends, top-selling product analysis, and dynamic product/month filters for real-time business intelligence.
+      </p>
+      <div class="tech-tags">
+        <span class="badge bg-dark">Python</span>
+        <span class="badge bg-dark">Pandas</span>
+        <span class="badge bg-dark">MySQL</span>
+        <span class="badge bg-dark">SQLAlchemy</span>
+        <span class="badge bg-dark">Streamlit</span>
+      </div>
+      <div class="mt-3">
+        <a href="https://github.com/varunmani004/sales-data-pipeline" class="btn btn-sm btn-custom me-2">View Project</a>
+        <a href="https://github.com/varunmani004/sales-data-pipeline" class="btn btn-sm btn-custom-secondary">Code</a>
+      </div>
+    </div>
+  </div>
+</div>
      
       <!-- Weather Insights Project -->
       <div class="col-md-6 col-lg-4" data-category="data">
@@ -322,26 +364,7 @@ I combine data-driven thinking with creative design to develop impactful solutio
         </div>
       </div>
       <!-- StudyBuddy AI Web App -->
-<div class="col-md-6 col-lg-4" data-category="web">
-  <div class="card">
-    <img src="images/sbai.png" class="card-img-top" alt="StudyBuddy AI Web App" loading="lazy" style="height: 200px; object-fit: cover">
-    <div class="card-body">
-      <h5 class="card-title" style="color: var(--accent-blue)">StudyBuddy – AI Study Assistant</h5>
-      <p class="card-text" style="color: var(--text-secondary)">
-        Intelligent study companion with AI-powered chat, subject-wise material upload, inline PDF preview, and personalized learning assistance. Built with Flask, vector embeddings, and OpenRouter LLM integration.
-      </p>
-      <div class="tech-tags">
-        <span class="badge bg-dark">Flask</span>
-        <span class="badge bg-dark">OpenRouter API</span>
-        <span class="badge bg-dark">python</span>
-      </div>
-      <div class="mt-3">
-        <a href="https://studybuddy-ai-x30d.onrender.com" class="btn btn-sm btn-custom me-2">View Demo</a>
-        <a href="https://github.com/varunmani004/StudyBuddy_AI" class="btn btn-sm btn-custom-secondary">Code</a>
-      </div>
-    </div>
-  </div>
-</div>
+
 
       
       <!-- 3D Car Animation -->
@@ -518,48 +541,58 @@ I combine data-driven thinking with creative design to develop impactful solutio
   </div>
 </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="certification card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-certificate fa-3x mb-3" style="color: var(--accent-blue)"></i>
-                <h5 class="text-white">C++ & Java Crash Course</h5>
-                <p class="text-white">Issued: August 20, 2025 by Udemy</p>
-                <a href="https://www.udemy.com/certificate/UC-oee04464-f968-4dc5-95a9-d5c0e4cc9bb9/" class="btn btn-sm btn-custom mt-2">View Credential</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 mb-4">
-            <div class="certification card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-certificate fa-3x mb-3" style="color: var(--accent-blue)"></i>
-                <h5 class="text-white" >Python Development with Data Science </h5>
-                <p class="text-white">Issued: July 12, 2025 by Udemy</p>
-                <a href="https://www.udemy.com/certificate/UC-135c659b-47eb-42f8-b58e-6fe60fae0b29/" class="btn btn-sm btn-custom mt-2">View Credential</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 mb-4">
-            <div class="certification card h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-certificate fa-3x mb-3" style="color: var(--accent-blue)"></i>
-                <h5 class="text-white">Mastering Google NotebookLM</h5>
-                <p class="text-white">Issued: August 20, 2025 by Udemy</p>
-                <a href="https://www.udemy.com/certificate/UC-135c659b-47eb-42f8-b58e-6fe60fae0b29/" class="btn btn-sm btn-custom mt-2">View Credential</a>
-              </div>
-            </div>
+   <!-- Certifications Section -->
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="row">
+
+      <!-- Certification 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="certification card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-certificate fa-3x mb-3" style="color: var(--accent-blue)"></i>
+            <h5 class="text-white">Data Analytics Certification</h5>
+            <p class="text-white">Issued: July 2024 by Institute of Analytics (IoA), UK</p>
+            <a href="images/IOA.jpg" class="btn btn-sm btn-custom mt-2" target="_blank">
+              View Credential
+            </a>
           </div>
         </div>
       </div>
-    </section>
 
+      <!-- Certification 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="certification card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-certificate fa-3x mb-3" style="color: var(--accent-blue)"></i>
+            <h5 class="text-white">Python Development with Data Science</h5>
+            <p class="text-white">Issued: July 12, 2025 by Udemy</p>
+            <a href="https://www.udemy.com/certificate/UC-135c659b-47eb-42f8-b58e-6fe60fae0b29/" class="btn btn-sm btn-custom mt-2">
+              View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certification 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="certification card h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-certificate fa-3x mb-3" style="color: var(--accent-blue)"></i>
+            <h5 class="text-white">Explore Machine Learning using Python</h5>
+            <p class="text-white">Issued: July 25, 2025 by Infosys Springboard</p>
+            <a href="images/pyds.png" class="btn btn-sm btn-custom mt-2" target="_blank">
+              View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
    <!-- Updated Contact Section -->
 <section id="contact" class="section bg-dark">
     <div class="container">
@@ -611,7 +644,7 @@ I combine data-driven thinking with creative design to develop impactful solutio
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<!-- Your custom scripts -->
+
 <script src="index.js"></script>
 
 
